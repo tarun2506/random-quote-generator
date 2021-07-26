@@ -20,7 +20,7 @@
 
 #text {
   transition: color 0.5s ease-in-out 0s;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 
 #author {
@@ -29,6 +29,7 @@
 
 .author-name {
   font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
   width: 80%;
   letter-spacing: 1px;
   display: flex;
@@ -47,6 +48,7 @@
   color: white;
   font-family: "Lato", sans-serif;
   transition: all 0.5s ease-in 0s;
+  font-size: 1.6rem;
 }
 .btn:hover {
   opacity: 0.9;
@@ -57,10 +59,11 @@
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 
 #dev {
   margin-top: 1rem;
   font-family: "lato", Times, serif;
+  color: white;
 }
