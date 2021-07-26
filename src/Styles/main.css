@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   /* background-color: black; */
-  height: 60vh;
+  height: 70vh;
   width: 60%;
   /* color: white; */
   border: none;
@@ -25,4 +25,26 @@
   justify-content: flex-end;
   margin-top: 1rem;
   color: black;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border: none;
+  border-radius: 3px;
+  background-color: black;
+  color: white;
+  font-family: "Lato", sans-serif;
+}
+
+#tweet-quote {
+  color: #1a91da;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-top: 2rem;
 }
