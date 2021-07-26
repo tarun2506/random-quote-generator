@@ -48,8 +48,8 @@ function Main({ color, setColor }) {
         </div>
         <div className="links">
           <a
-            href="twitter.com/intent/tweet"
-            target="_top"
+            href="https://www.twitter.com/intent/tweet"
+            target="_top  "
             id="tweet-quote"
             className="btn"
             style={{ backgroundColor: color }}

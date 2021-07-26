@@ -16,11 +16,11 @@
 
 .quote {
   width: 70%;
-  font-size: 1.2rem;
 }
 
 #text {
   transition: color 0.5s ease-in-out 0s;
+  font-size: 1.2rem;
 }
 
 #author {
