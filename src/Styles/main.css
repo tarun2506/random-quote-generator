@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background-color: black; */
+  background-color: white;
   height: 70vh;
   width: 60%;
   /* color: white; */
@@ -11,12 +11,22 @@
   border-radius: 0.5rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   font-family: "Roboto", sans-serif;
+  transition: all 0.5s ease-in 0s;
 }
 
 .quote {
   width: 70%;
   font-size: 1.2rem;
 }
+
+#text {
+  transition: color 0.5s ease-in-out 0s;
+}
+
+#author {
+  transition: color 0.5s ease-in-out 0s;
+}
+
 .author-name {
   font-family: "Montserrat", sans-serif;
   width: 80%;
@@ -24,6 +34,7 @@
   display: flex;
   justify-content: flex-end;
   margin-top: 1rem;
+  transition: all 0.5s ease-in 0s;
   color: black;
 }
 
@@ -35,10 +46,10 @@
   background-color: black;
   color: white;
   font-family: "Lato", sans-serif;
+  transition: all 0.5s ease-in 0s;
 }
-
-#tweet-quote {
-  color: #1a91da;
+.btn:hover {
+  opacity: 0.9;
 }
 
 .links {
@@ -47,4 +58,9 @@
   align-items: center;
   width: 100%;
   margin-top: 2rem;
+}
+
+#dev {
+  margin-top: 1rem;
+  font-family: "lato", Times, serif;
 }

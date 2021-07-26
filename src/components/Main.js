@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import "../Styles/main.css";
 import axios from "axios";
 import { FaQuoteLeft, FaTwitter } from "react-icons/fa";
-function Main() {
+import randomColor from "randomcolor";
+function Main({ color, setColor }) {
   const [quote, setQuote] = useState("");
   const [authorName, setAuthorName] = useState("");
   useEffect(() => {
@@ -22,6 +23,8 @@ function Main() {
       .then((res) => {
         setQuote(res.data.content);
         setAuthorName(res.data.author);
+        let colorr = randomColor();
+        setColor(colorr);
       })
       .catch((err) => {
         console.log(err.message);
@@ -31,7 +34,7 @@ function Main() {
     <>
       <div id="quote-box">
         <div className="quote">
-          <p id="text">
+          <p id="text" style={{ color }}>
             <span id="icon">
               <FaQuoteLeft />
             </span>
@@ -39,7 +42,9 @@ function Main() {
           </p>
         </div>
         <div className="author-name">
-          <p id="author">~ {authorName}</p>
+          <p id="author" style={{ color }}>
+            ~ {authorName}
+          </p>
         </div>
         <div className="links">
           <a
@@ -47,14 +52,22 @@ function Main() {
             target="_top"
             id="tweet-quote"
             className="btn"
+            style={{ backgroundColor: color }}
           >
             <FaTwitter />
           </a>
-          <a href="#" onClick={handleReq} id="new-quote" className="btn">
+          <a
+            href="#"
+            onClick={handleReq}
+            id="new-quote"
+            className="btn"
+            style={{ backgroundColor: color }}
+          >
             New Quote
           </a>
         </div>
       </div>
+      <h4 id="dev">by Tarun</h4>
     </>
   );
 }
