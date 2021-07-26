@@ -67,7 +67,7 @@ function Main({ color, setColor }) {
           </a>
         </div>
       </div>
-      <h4 id="dev">by Tarun</h4>
+      <h4 id="dev">by Tarun ✌</h4>
     </>
   );
 }

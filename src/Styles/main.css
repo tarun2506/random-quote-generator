@@ -65,7 +65,7 @@
 #dev {
   margin-top: 1rem;
   font-family: "lato", Times, serif;
-  color: white;
+  color: rgb(61, 61, 61);
 }
 
 @media (max-width: 700px) {
