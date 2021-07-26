@@ -67,3 +67,9 @@
   font-family: "lato", Times, serif;
   color: white;
 }
+
+@media (max-width: 700px) {
+  #quote-box {
+    width: 90%;
+  }
+}
